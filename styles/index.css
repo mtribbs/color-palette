@@ -1,0 +1,83 @@
+main {
+    max-width: 1440px;
+    max-height: 900px;
+}
+
+.grid-container {
+    width: 1400px; /* couldn't get max-width to work */
+    height: 800px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr repeat(4,1fr);
+    grid-gap: 24px;
+    background-color: #E5E5E5;
+    padding: 24px;
+}
+
+.one {
+    background-color: #007F5F;
+    grid-row: 1 / span 2;
+    grid-column: 1/2;
+}
+.two {
+    background-color: #2B9348;
+    grid-row: 3 / span 2;
+    grid-column: 1/2;
+}
+.three {
+    background-color: #55A630;
+    grid-row: 5 / span 2;
+    grid-column: 1/2;
+}
+.four {
+    background-color: #80B918;
+    grid-row: 1 / span 4;
+    grid-column: 2/4;
+}
+.five {
+    background-color: #AACC00;
+    grid-row: 6/6;
+    grid-column: 2/2;
+}
+.six {
+    background-color: #BFD200;
+    grid-row: 5/5;
+    grid-column: 2/2;
+}
+.seven {
+    background-color: #DDDF00;
+    grid-row: 1 / 1;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+.eight {
+    background-color: #EEEF20;
+    grid-row: 2 / span 2; /* this one is taller than the other two, but I couldn't figure out how to solve it otherwise */
+    grid-column: 4/6;
+}
+.nine {
+    background-color: #FFFF3F;
+    grid-row: 4 / 4;
+    grid-column: 4/6;;
+}
+.ten {
+    background-color: #D4D700;
+    grid-row: 5 / span 2;
+    grid-column: 3/5;
+}
+.eleven {
+    background-color: #007F5F;
+    grid-row: 5 / span 2;
+    grid-column: 5/5;
+}
+
+.title {
+    background-color: #9BC1BC;
+    max-width: 1400px;
+    padding: 50px;
+    margin-top: 0px;
+    font-size: 64px;
+    font-weight: bold;
+    text-transform:uppercase;
+    font-family: Helvetica, sans-serif;
+}
